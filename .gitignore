@@ -1,0 +1,13 @@
+# Arquivos gerados automaticamente pela Godot
+.godot/
+.import/
+/android/
+
+# Arquivos de configuração específicos de cada computador
+export_presets.cfg
+
+# Executáveis exportados (caso você exporte na mesma pasta)
+*.html
+*.pck
+*.zip
+*.cfg
