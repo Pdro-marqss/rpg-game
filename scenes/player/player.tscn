@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://betn0kmqs4jfq" path="res://scenes/player/player.gd" id="1_lvxji"]
 [ext_resource type="Texture2D" uid="uid://cc0q6egjxfobw" path="res://Sprites/Actor/Characters/Boy/SeparateAnim/Idle.png" id="2_lvxji"]
 [ext_resource type="Texture2D" uid="uid://bacld8ysircpa" path="res://Sprites/Actor/Characters/Boy/SeparateAnim/Walk.png" id="3_p47bc"]
+[ext_resource type="PackedScene" uid="uid://3bp8j1y1onu" path="res://scenes/health_component/health_component.tscn" id="5_5gtgg"]
 [ext_resource type="Script" uid="uid://dgmbg3l470svp" path="res://scripts/fsm.gd" id="5_p47bc"]
 [ext_resource type="Script" uid="uid://kjar3nef4xid" path="res://scenes/player/states/player_state_idle.gd" id="6_75vfm"]
 [ext_resource type="Script" uid="uid://dy1ebgq5ltt6x" path="res://scenes/player/states/player_state_walk.gd" id="7_0owmy"]
@@ -215,6 +216,8 @@ shape = SubResource("CircleShape2D_a8ku5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1002183561]
 zoom = Vector2(3, 3)
+
+[node name="HealthComponent" parent="." unique_id=801362679 instance=ExtResource("5_5gtgg")]
 
 [node name="FSM" type="Node" parent="." unique_id=1982764922]
 script = ExtResource("5_p47bc")
